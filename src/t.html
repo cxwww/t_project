@@ -1,0 +1,34 @@
+<html>
+
+<head>
+</head>
+<body>
+<script>
+
+// new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     // resolve('h2ll')
+//     reject('err')
+//     resolve('h2ll')
+//   }, 1000)
+// }).then((data) => {
+//   console.log(data)
+// }).catch(err => {
+//   console.error(err)
+// })
+
+new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('resolve')
+    reject('reject')
+  }, 1000)
+}).then(data => {
+  console.info(data)
+}, err => {
+  console.error(err)
+})
+
+</script>
+</body>
+
+</html>
